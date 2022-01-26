@@ -2,7 +2,7 @@
     "name": "genticssnippets",
     "displayName": "Gentics Snippets",
     "description": "Snippets for working Apache Velocity and Gentics CMS",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "DevAlmir",
     "repository": {
         "url": "https://github.com/ImeriAlmir/GenticsSnippets"

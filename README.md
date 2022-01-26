@@ -11,4 +11,8 @@ Snippets for working with Apache Velocity:
 
 Initial release of Gentics Snippets
 
+### 1.1.0
+
+added new snippets for creating variables and macros
+
 **Enjoy!**

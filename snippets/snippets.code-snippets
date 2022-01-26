@@ -88,7 +88,59 @@
   "GTX Set": {
     "prefix": "gtx_set",
     "body": [
-      "#set(${1} = ${2})"
+      "#set(\\$${1:ref} = ${2:\\$cms.})"
     ]
+  },
+	".tag": {
+		"prefix": ".tag",
+		"body": [
+      ".tag"
+    ],
+		"description": "",
+	},
+  ".parts": {
+    "prefix": ".parts",
+    "body": [
+      ".parts"
+    ],
+    "description": ""
+  },
+  ".node": {
+    "prefix": ".node",
+    "body": [
+      ".node"
+    ],
+    "description": ""
+  },
+  ".page": {
+    "prefix": ".page",
+    "body": [
+      ".page"
+    ],
+    "description": ""
+  },
+  ".object": {
+    "prefix": ".object",
+    "body": [
+      ".object"
+    ],
+    "description": ""
+  },
+  ".tags": {
+    "prefix": ".tags",
+    "body": [
+      ".tags"
+    ],
+    "description": ""
+  },
+  "GTX Macro": {
+    "prefix": "gtx_macro",
+    "body": [
+      "#macro(\\$${1:macroname} \\$${2:arg1} \\$${3:arg2})##",
+      "    ${4}",
+      "#end##",
+      "${5}"
+    ],
+    "description": ""
   }
 }
