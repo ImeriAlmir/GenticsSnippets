@@ -1,0 +1,88 @@
+{    
+  "GTX Overview": {
+    "prefix": "gtx_overview",
+    "body": [
+      "#set(${1} = $!cms.tag.parts.${2}.items)##"
+    ],
+  },
+  "GTX Edit": {
+    "prefix": "gtx_edit",
+    "body": [
+      "#gtx_edit(\"${1}\")##"
+    ]
+  },
+  "GTX Resize": {
+    "prefix": "gtx_resize",
+    "body": [
+      "#set(${1} = {\"width\": ${2}, \"height\": ${3}, \"mode\": \"${4}\"})##",
+      "${5}"
+    ]
+  },
+  "GTX Multiselect": {
+    "prefix": "gtx_multi",
+    "body": [
+      "#set(${1} = $!cms.tag.parts.multiselect.items)##"
+    ]
+  },
+  "GTX Imagestore": {
+    "prefix": "gtx_gis",
+    "body": [
+      "#set(${1} = \"#gtx_gis(${2}, ${3})\")##"
+    ]
+  },
+  "GTX For Loop": {
+    "prefix": "gtx_for",
+    "body": [
+      "#foreach(${1} in ${2})##",
+      "    ##code",
+      "    ${3}",
+      "#end##",
+      "${4}"
+    ]
+  },
+  "GTX Escape HTML": {
+    "prefix": "gtx_escape_html",
+    "body": [
+      "$!cms.imps.string.escapeHTML(${1})##"
+    ]
+  },
+  "GTX If": {
+    "prefix": "gtx_if",
+    "body": [
+      "#if(${1})##",
+      "    ##code",
+      "    ${2}",
+      "#end##",
+      "${3}"
+    ]
+  }, 
+  "GTX If Else": {
+    "prefix": "gtx_if_else",
+    "body": [
+      "#if(${1})##",
+      "    ##code",
+      "    ${2}",
+      "#else",
+      "    ##code",
+      "    ${3}",
+      "#end##",
+      "${4}"
+    ]
+  }, 
+  "GTX If ElseIf Else": {
+    "prefix": "gtx_elif",
+    "body": [
+      "#if(${1})##",
+      "    ##code",
+      "    ${2}",
+      "#elseif(${3})##",
+      "    ##code",
+      "    ${4}",
+      "#else##",
+      "    ##code",
+      "    ${5}",
+      "#end##",
+      "${6}"
+    ]
+  }
+}
